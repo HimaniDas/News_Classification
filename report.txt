@@ -1,0 +1,147 @@
+1.for preprocess text lowercase, remove puncuation, remove whitespace, remove stopword
+and prefeature for NB ngram(2,5) for SVM ngram(2,3) and amount of data 2000
+=======================================================================================
+naive bayes:
+...............
+
+Accuracy =  0.757
+
+                 precision    recall  f1-score   support
+
+Business           0.816     0.512     0.629       449
+Sci_Tech           0.628     0.862     0.727       514
+Sports             0.909     0.816     0.860       526
+World              0.762     0.806     0.783       511
+
+accuracy                               0.757      2000
+   macro avg       0.779     0.749     0.750      2000
+weighted avg       0.778     0.757     0.754      2000
+
+
+Confusion Matrix : 
+[[230 148  10  61]
+ [ 34 443  10  27]
+ [  5  51 429  41]
+ [ 13  63  23 412]]
+
+
+The SVM Classifier....
+
+
+Accuracy =  0.7815
+              precision    recall  f1-score   support
+
+    Business      0.868     0.572     0.690       449
+    Sci_Tech      0.627     0.924     0.747       514
+      Sports      0.936     0.804     0.865       526
+       World      0.826     0.798     0.812       511
+
+    accuracy                          0.781      2000
+   macro avg      0.814     0.775     0.778      2000
+weighted avg      0.813     0.781     0.782      2000
+
+Confusion Matrix : 
+[[257 149   5  38]
+ [ 20 475   4  15]
+ [  5  65 423  33]
+ [ 14  69  20 408]]
+
+2.for preprocess text lowercase, remove puncuation, remove whitespace, remove stopword
+and prefeature for NB ngram(1,1) for SVM ngram(1,1)
+=======================================================================================
+
+Training The Naive Bayes Classifier....
+
+
+Accuracy =  0.441
+              precision    recall  f1-score   support
+
+    Business      0.423     0.298     0.350       449
+    Sci_Tech      0.407     0.648     0.500       514
+      Sports      0.566     0.359     0.440       526
+       World      0.426     0.442     0.434       511
+
+    accuracy                          0.441      2000
+   macro avg      0.455     0.437     0.431      2000
+weighted avg      0.457     0.441     0.433      2000
+
+Confusion Matrix : 
+[[134 175  42  98]
+ [ 75 333  30  76]
+ [ 37 169 189 131]
+ [ 71 141  73 226]]
+
+Training The SVM Classifier....
+
+
+Accuracy =  0.36
+              precision    recall  f1-score   support
+
+    Business      0.520     0.029     0.055       449
+    Sci_Tech      0.316     0.911     0.469       514
+      Sports      0.893     0.048     0.090       526
+       World      0.458     0.419     0.438       511
+
+    accuracy                          0.360      2000
+   macro avg      0.547     0.351     0.263      2000
+weighted avg      0.550     0.360     0.269      2000
+
+Confusion Matrix : 
+[[ 13 364   0  72]
+ [  1 468   0  45]
+ [  4 361  25 136]
+ [  7 287   3 214]]
+
+
+
+
+
+3.for preprocess text lowercase, remove puncuation, remove whitespace, remove stopword
+and prefeature for NB ngram(1,2) for SVM ngram(1,1)
+=======================================================================================
+
+
+Training The Naive Bayes Classifier....
+
+
+Accuracy =  0.441
+              precision    recall  f1-score   support
+
+    Business      0.423     0.298     0.350       449
+    Sci_Tech      0.407     0.648     0.500       514
+      Sports      0.566     0.359     0.440       526
+       World      0.426     0.442     0.434       511
+
+    accuracy                          0.441      2000
+   macro avg      0.455     0.437     0.431      2000
+weighted avg      0.457     0.441     0.433      2000
+
+Confusion Matrix : 
+[[134 175  42  98]
+ [ 75 333  30  76]
+ [ 37 169 189 131]
+ [ 71 141  73 226]]
+
+Training The SVM Classifier....
+
+
+Accuracy =  0.36
+              precision    recall  f1-score   support
+
+    Business      0.520     0.029     0.055       449
+    Sci_Tech      0.316     0.911     0.469       514
+      Sports      0.893     0.048     0.090       526
+       World      0.458     0.419     0.438       511
+
+    accuracy                          0.360      2000
+   macro avg      0.547     0.351     0.263      2000
+weighted avg      0.550     0.360     0.269      2000
+
+Confusion Matrix : 
+[[ 13 364   0  72]
+ [  1 468   0  45]
+ [  4 361  25 136]
+ [  7 287   3 214]]
+
+
+
